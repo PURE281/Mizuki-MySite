@@ -46,7 +46,6 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/d0.webp",
 				"/assets/desktop-banner/d1.webp",
 				"/assets/desktop-banner/d2.webp",
 				"/assets/desktop-banner/d3.webp",
@@ -54,7 +53,6 @@ export const siteConfig: SiteConfig = {
 				"/assets/desktop-banner/d5.webp",
 				"/assets/desktop-banner/d6.webp",
 				"/assets/desktop-banner/d7.webp",
-				"/assets/desktop-banner/d8.webp",
 			], // 桌面横幅图片
 			mobile: [
 				"/assets/mobile-banner/m0.webp",
@@ -74,7 +72,7 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
-			interval: 1.5, // 轮播间隔时间（秒）
+			interval: 3, // 轮播间隔时间（秒）
 		},
 
 		// PicFlow API支持(智能图片API)
@@ -90,12 +88,7 @@ export const siteConfig: SiteConfig = {
 			enable: true, // 在主页显示自定义文本
 			title: "PURE281的个人博客", // 主页横幅主标题
 
-			subtitle: [
-				"一个展示型的个人博客",
-				"轮播高亮：创新",
-				"轮播聚焦：用户体验",
-				"轮播亮点：核心优势",
-			],
+			subtitle: ["相信相信的力量", "找不到答案的时候就找自己", "群像的力量"],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
 
@@ -141,25 +134,25 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
 	src: {
 		desktop: [
-				"/assets/desktop-banner/d1.webp",
-				"/assets/desktop-banner/d2.webp",
-				"/assets/desktop-banner/d3.webp",
-				"/assets/desktop-banner/d4.webp",
-				"/assets/desktop-banner/d5.webp",
-				"/assets/desktop-banner/d6.webp",
-				"/assets/desktop-banner/d7.webp",
-				"/assets/desktop-banner/d8.webp",
-			], // 桌面横幅图片
-			mobile: [
-				"/assets/mobile-banner/m1.webp",
-				"/assets/mobile-banner/m2.webp",
-				"/assets/mobile-banner/m3.webp",
-				"/assets/mobile-banner/m4.webp",
-				"/assets/mobile-banner/m5.webp",
-				"/assets/mobile-banner/m6.webp",
-				"/assets/mobile-banner/m7.webp",
-				"/assets/mobile-banner/m8.webp",
-			], // 移动横幅图片
+			"/assets/desktop-banner/d1.webp",
+			"/assets/desktop-banner/d2.webp",
+			"/assets/desktop-banner/d3.webp",
+			"/assets/desktop-banner/d4.webp",
+			"/assets/desktop-banner/d5.webp",
+			"/assets/desktop-banner/d6.webp",
+			"/assets/desktop-banner/d7.webp",
+			"/assets/desktop-banner/d8.webp",
+		], // 桌面横幅图片
+		mobile: [
+			"/assets/mobile-banner/m1.webp",
+			"/assets/mobile-banner/m2.webp",
+			"/assets/mobile-banner/m3.webp",
+			"/assets/mobile-banner/m4.webp",
+			"/assets/mobile-banner/m5.webp",
+			"/assets/mobile-banner/m6.webp",
+			"/assets/mobile-banner/m7.webp",
+			"/assets/mobile-banner/m8.webp",
+		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
 	carousel: {
@@ -192,7 +185,7 @@ export const navBarConfig: NavBarConfig = {
 					url: "https://space.bilibili.com/61814778",
 					external: true,
 					icon: "fa6-brands:bilibili",
-				}
+				},
 			],
 		},
 		{
@@ -254,7 +247,7 @@ export const profileConfig: ProfileConfig = {
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/PURE281",
-		}
+		},
 	],
 	// Umami统计部份，记得在layout插入Umami的head标签
 	umami: {
