@@ -26,6 +26,9 @@ export type SiteConfig = {
 		zenMaruGothic: {
 			enable: boolean; // 是否使用 ZenMaruGothic-Black 作为全局字体
 		};
+		hanalei: {
+			enable: boolean; // 是否使用 Hanalei 作为全局字体
+		};
 	};
 
 	translate?: {
@@ -123,11 +126,7 @@ export type ProfileConfig = {
 		url: string;
 		icon: string;
 	}[];
-	umami?: {
-		enable?: boolean;
-		shareId: string;
-		region: string;
-	};
+
 };
 
 export type LicenseConfig = {
