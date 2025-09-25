@@ -5,6 +5,8 @@ pinned: false
 description: A simple example of a Markdown blog post.
 tags: [Markdown, Blogging]
 category: Examples
+encrypted: true
+password: "52boncest"
 licenseName: "Unlicensed"
 author: emn178
 sourceLink: "https://github.com/emn178/markdown"
