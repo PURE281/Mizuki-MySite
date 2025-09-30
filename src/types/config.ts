@@ -3,6 +3,7 @@ import type { AUTO_MODE, DARK_MODE, LIGHT_MODE } from "../constants/constants";
 export type SiteConfig = {
 	title: string;
 	subtitle: string;
+	keywords?: string[]; // 站点关键词，用于生成 <meta name="keywords">
 
 	lang:
 		| "en"
@@ -45,6 +46,12 @@ export type SiteConfig = {
 	bangumi?: {
 		userId?: string; // Bangumi用户ID
 	};
+	
+	// 添加番剧页面配置
+	anime?: {
+		mode?: "bangumi" | "local"; // 番剧页面模式
+	};
+
 
 	banner: {
 		enable: boolean;
@@ -90,6 +97,7 @@ export type SiteConfig = {
 	};
 	generateOgImages: boolean;
 	favicon: Favicon[];
+	showLastModified: boolean; // 控制“上次编辑”卡片显示的开关
 };
 
 export type Favicon = {
@@ -167,6 +175,7 @@ export type BlogPostData = {
 	draft?: boolean;
 	image?: string;
 	category?: string;
+	series?: string;
 	pinned?: boolean;
 	prevTitle?: string;
 	prevSlug?: string;

@@ -7,6 +7,7 @@ enum I18nKey {
 
 	tags = "tags",
 	categories = "categories",
+	series = 'series',
 	recentPosts = "recentPosts",
 	postList = "postList",
 	tableOfContents = "tableOfContents",
@@ -56,6 +57,9 @@ enum I18nKey {
 	animeStatusPlanned = "animeStatusPlanned",
 	animeYear = "animeYear",
 	animeStudio = "animeStudio",
+	animeEmpty = "animeEmpty",
+	animeEmptyBangumi = "animeEmptyBangumi",
+	animeEmptyLocal = "animeEmptyLocal",
 
 	// 短文页面
 	diarySubtitle = "diarySubtitle",
@@ -200,6 +204,16 @@ enum I18nKey {
 	syntaxHighlightFailed = "syntaxHighlightFailed",
 	autoSyntaxHighlightFailed = "autoSyntaxHighlightFailed",
 	decryptionError = "decryptionError",
+
+	//最后编辑时间卡片
+	lastModifiedPrefix = "lastModifiedPrefix",
+	lastModifiedOutdated = "lastModifiedOutdated",
+	year = "year",
+	month = "month",
+	day = "day",
+	hour = "hour",
+	minute = "minute",
+	second = "second",
 }
 
 export default I18nKey;

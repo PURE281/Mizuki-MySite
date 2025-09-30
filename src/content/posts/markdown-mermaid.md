@@ -5,6 +5,7 @@ pinned: false
 description: A simple example of a Markdown blog post with Mermaid.
 tags: [Markdown, Blogging, Mermaid]
 category: Examples
+series: Guide
 draft: false
 encrypted: true
 password: "52boncest"

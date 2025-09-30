@@ -10,6 +10,7 @@ export const en: Translation = {
 
 	[Key.tags]: "Tags",
 	[Key.categories]: "Categories",
+	[Key.series]: "Series",
 	[Key.recentPosts]: "Recent Posts",
 	[Key.postList]: "Post List",
 	[Key.tableOfContents]: "Table of Contents",
@@ -59,6 +60,10 @@ export const en: Translation = {
 	[Key.animeStatusPlanned]: "Planned",
 	[Key.animeYear]: "Year",
 	[Key.animeStudio]: "Studio",
+	[Key.animeEmpty]: "No anime data",
+	[Key.animeEmptyBangumi]:
+		"Please check Bangumi configuration or network connection",
+	[Key.animeEmptyLocal]: "Please add anime information in src/data/anime.ts",
 
 	// 短文页面
 	[Key.diarySubtitle]: "Share life anytime, anywhere",
@@ -204,10 +209,20 @@ export const en: Translation = {
 	[Key.passwordRequired]: "Please enter password",
 	[Key.passwordVerifying]: "Verifying...",
 	[Key.passwordDecryptFailed]: "Decryption failed, please check password",
-	[Key.passwordDecryptRetry]: "Decryption failed, please retry",
+	[Key.passwordDecryptRetry]: "Decryption failed, please try again",
 	[Key.passwordUnlockButton]: "Unlock",
 	[Key.copyFailed]: "Copy failed:",
 	[Key.syntaxHighlightFailed]: "Syntax highlighting failed:",
 	[Key.autoSyntaxHighlightFailed]: "Auto syntax highlighting also failed:",
-	[Key.decryptionError]: "Error occurred during decryption:",
+	[Key.decryptionError]: "An error occurred during decryption:",
+
+	// Last Modified Card
+	[Key.lastModifiedPrefix]: "Last modified: ",
+	[Key.lastModifiedOutdated]: "Some information may be outdated",
+	[Key.year]: "Y ",
+	[Key.month]: "M ",
+	[Key.day]: "D ",
+	[Key.hour]: "H ",
+	[Key.minute]: "Min ",
+	[Key.second]: "Sec",
 };

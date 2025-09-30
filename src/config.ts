@@ -23,6 +23,15 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 export const siteConfig: SiteConfig = {
 	title: "PURE281",
 	subtitle: "PURE281的个人博客",
+	keywords: [
+		"Fuwari",
+		"Mizuki",
+		"Astro",
+		"ACGN",
+		"博客",
+		"技术博客",
+		"静态博客",
+	],
 
 	lang: SITE_LANG,
 
@@ -43,6 +52,11 @@ export const siteConfig: SiteConfig = {
 	bangumi: {
 		userId: "your-bangumi-id", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
 	},
+  
+	anime: {
+		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
+	},
+
 	banner: {
 		enable: true, // 是否启动Banner壁纸模式
 
@@ -135,6 +149,7 @@ export const siteConfig: SiteConfig = {
 			enable: false, // 启用 Hanalei 字体作为全局字体，适合中文去使用
 		},
 	},
+	showLastModified: true, // 控制“上次编辑”卡片显示的开关
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
@@ -255,7 +270,6 @@ export const profileConfig: ProfileConfig = {
 			url: "https://github.com/PURE281",
 		},
 	],
-
 };
 
 export const licenseConfig: LicenseConfig = {
@@ -473,9 +487,9 @@ export const widgetConfigs = {
 } as const;
 
 export const umamiConfig = {
-  enabled: false, // 是否显示Umami统计
-  shareURL: "https://us.umami.is/api/share/ABCD1234", //你的分享API,支持自建服务
-  scripts: `
+	enabled: false, // 是否显示Umami统计
+	shareURL: "https://us.umami.is/api/share/ABCD1234", //你的分享API,支持自建服务
+	scripts: `
 <script defer src="XXXX.XXX" data-website-id="ABCD1234"></script>
-  `.trim() //上面填你要插入的Script,不用再去Layout中插入
+  `.trim(), //上面填你要插入的Script,不用再去Layout中插入
 } as const;

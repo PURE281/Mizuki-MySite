@@ -8,6 +8,7 @@ encrypted: true
 password: "52boncest"
 tags: [Demo, Example, Markdown]
 category: 'Examples'
+series: Guide
 draft: false 
 ---
 

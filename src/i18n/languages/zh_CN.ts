@@ -10,6 +10,7 @@ export const zh_CN: Translation = {
 
 	[Key.tags]: "标签",
 	[Key.categories]: "分类",
+	[Key.series]: "系列",
 	[Key.recentPosts]: "最新文章",
 	[Key.postList]: "文章列表",
 	[Key.tableOfContents]: "目录",
@@ -58,6 +59,9 @@ export const zh_CN: Translation = {
 	[Key.animeStatusPlanned]: "计划中",
 	[Key.animeYear]: "年份",
 	[Key.animeStudio]: "制作",
+	[Key.animeEmpty]: "暂无追番数据",
+	[Key.animeEmptyBangumi]: "请检查 Bangumi 配置或网络连接",
+	[Key.animeEmptyLocal]: "请在 src/data/anime.ts 文件中添加番剧信息",
 
 	// 短文页面
 	[Key.diarySubtitle]: "随时随地，分享生活",
@@ -81,7 +85,7 @@ export const zh_CN: Translation = {
 	// 相册页面
 	[Key.albums]: "相册",
 	[Key.albumsSubtitle]: "记录生活中的美好瞬间",
-	[Key.albumsEmpty]: "暂无相册",
+	[Key.albumsEmpty]: "暂无内容",
 	[Key.albumsEmptyDesc]: "还没有创建任何相册，快去添加一些美好的回忆吧！",
 	[Key.albumsBackToList]: "返回相册",
 	[Key.albumsPhotoCount]: "张照片",
@@ -203,4 +207,14 @@ export const zh_CN: Translation = {
 	[Key.syntaxHighlightFailed]: "语法高亮失败:",
 	[Key.autoSyntaxHighlightFailed]: "自动语法高亮也失败:",
 	[Key.decryptionError]: "解密过程中发生错误:",
+
+	//最后编辑时间卡片
+	[Key.lastModifiedPrefix]: "距离上次编辑: ",
+	[Key.lastModifiedOutdated]: "部分信息可能已经过时",
+	[Key.year]: "年",
+	[Key.month]: "月",
+	[Key.day]: "天",
+	[Key.hour]: "小时",
+	[Key.minute]: "分",
+	[Key.second]: "秒",
 };
