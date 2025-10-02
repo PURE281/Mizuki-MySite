@@ -10,7 +10,6 @@ const postsCollection = defineCollection({
 		image: z.string().optional().default(""),
 		tags: z.array(z.string()).optional().default([]),
 		category: z.string().optional().nullable().default(""),
-		series: z.string().optional(),
 		lang: z.string().optional().default(""),
 		pinned: z.boolean().optional().default(false),
 		author: z.string().optional().default(""),
@@ -21,6 +20,8 @@ const postsCollection = defineCollection({
 		/* Page encryption fields */
 		encrypted: z.boolean().optional().default(false),
 		password: z.string().optional().default(""),
+
+		series: z.string().optional(),
 
 		/* For internal use */
 		prevTitle: z.string().default(""),

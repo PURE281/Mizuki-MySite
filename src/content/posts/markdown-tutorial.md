@@ -10,8 +10,8 @@ password: "52boncest"
 licenseName: "Unlicensed"
 author: emn178
 sourceLink: "https://github.com/emn178/markdown"
-series: Guide
 draft: false
+series: "Mizuki"
 ---
 
 # Markdown Tutorial
@@ -93,7 +93,7 @@ Markdown supports two styles of headers, Setext and atx.
 
 HTML Tags: `<h1>`, `<h2>`
 
-“Underlined” using **equal signs (=)** as `<h1>` and **dashes (-)** as `<h2>` in any number.
+"Underlined" using **equal signs (=)** as `<h1>` and **dashes (-)** as `<h2>` in any number.
 
 Code:
 
@@ -136,7 +136,7 @@ Preview:
 
 ---
 
-Optionally, you may “close” atx-style headers. The closing hashes **don’t need to match** the number of hashes used to open the header.
+Optionally, you may "close" atx-style headers. The closing hashes **don't need to match** the number of hashes used to open the header.
 
 Code:
 
@@ -322,7 +322,7 @@ Preview:
 
 ---
 
-It’s possible to trigger an ordered list by accident, by writing something like this:
+It's possible to trigger an ordered list by accident, by writing something like this:
 
 Code:
 
@@ -354,7 +354,7 @@ Preview:
 
 ##### Blockquote
 
-To put a blockquote within a list item, the blockquote’s > delimiters need to be indented:
+To put a blockquote within a list item, the blockquote's > delimiters need to be indented:
 
 Code:
 
@@ -621,7 +621,7 @@ This is [an example](http://example.com/ "Title") inline link.
 
 ---
 
-If you’re referring to a local resource on the same server, you can use relative paths:
+If you're referring to a local resource on the same server, you can use relative paths:
 
 Code:
 
@@ -721,7 +721,7 @@ _single underscores_
 
 ---
 
-But if you surround an \* or \_ with spaces, it’ll be treated as a literal asterisk or underscore.
+But if you surround an \* or \_ with spaces, it'll be treated as a literal asterisk or underscore.
 
 You can backslash escape it:
 
@@ -866,7 +866,7 @@ Preview:
 
 ### Automatic Links
 
-Markdown supports a shortcut style for creating “automatic” links for URLs and email addresses: simply surround the URL or email address with angle brackets.
+Markdown supports a shortcut style for creating "automatic" links for URLs and email addresses: simply surround the URL or email address with angle brackets.
 
 Code:
 
@@ -902,7 +902,7 @@ https://github.com/emn178/markdown
 
 ### Backslash Escapes
 
-Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown’s formatting syntax.
+Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown's formatting syntax.
 
 Code:
 
@@ -935,7 +935,7 @@ Code:
 
 ## Inline HTML
 
-For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.
+For any markup that is not covered by Markdown's syntax, you simply use HTML itself. There's no need to preface it or delimit it to indicate that you're switching from Markdown to HTML; you just use the tags.
 
 Code:
 

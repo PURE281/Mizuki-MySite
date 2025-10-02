@@ -10,7 +10,6 @@ export const zh_CN: Translation = {
 
 	[Key.tags]: "标签",
 	[Key.categories]: "分类",
-	[Key.series]: "系列",
 	[Key.recentPosts]: "最新文章",
 	[Key.postList]: "文章列表",
 	[Key.tableOfContents]: "目录",
@@ -45,6 +44,10 @@ export const zh_CN: Translation = {
 	[Key.license]: "许可协议",
 	[Key.anime]: "追番",
 	[Key.diary]: "日记",
+
+	// 专栏
+	[Key.series]: "专栏",
+	[Key.seriesOtherPosts]: "专栏其他文章",
 
 	// 番剧页面
 	[Key.animeTitle]: "我的追番记录",

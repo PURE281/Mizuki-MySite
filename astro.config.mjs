@@ -40,7 +40,7 @@ export default defineConfig({
 			animationClass: "transition-swup-", // see https://swup.js.org/options/#animationselector
 			// the default value `transition-` cause transition delay
 			// when the Tailwind class `transition-all` is used
-			containers: ["main", '#series'],
+			containers: ["main"],
 			smoothScrolling: false, // 禁用平滑滚动以提升性能，避免与锚点导航冲突
 			cache: true,
 			preload: false, // 禁用预加载以减少网络请求
@@ -66,7 +66,8 @@ export default defineConfig({
 			},
 		}),
 		expressiveCode({
-			themes: [expressiveCodeConfig.theme, expressiveCodeConfig.theme],
+			themes: ["github-light", "github-dark"],
+			themeCSSSelector: (theme) => `[data-theme="${theme}"]`,
 			plugins: [
 				pluginCollapsibleSections(),
 				pluginLineNumbers(),
@@ -99,6 +100,10 @@ export default defineConfig({
 					editorActiveTabIndicatorTopColor: "none",
 					editorTabBarBorderBottomColor: "var(--codeblock-topbar-bg)",
 					terminalTitlebarBorderBottomColor: "none",
+					copyButtonBackground: "var(--btn-regular-bg)",
+					copyButtonBackgroundHover: "var(--btn-regular-bg-hover)",
+					copyButtonBackgroundActive: "var(--btn-regular-bg-active)",
+					copyButtonForeground: "var(--btn-content)",
 				},
 				textMarkers: {
 					delHue: 0,

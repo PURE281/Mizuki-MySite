@@ -7,11 +7,12 @@ import Categories from "./Categories.astro";
 import Tags from "./Tags.astro";
 import TOC from "./TOC.astro";
 import MusicPlayer from "./MusicPlayer.svelte";
+import Series from './Series.astro';
 
 interface Props {
 	class?: string;
 	headings?: MarkdownHeading[];
-	series?: string;
+        series?: string;
 }
 
 const { class: className, headings, series } = Astro.props;
@@ -28,6 +29,7 @@ const componentMap = {
 	tags: Tags,
 	toc: TOC,
 	"music-player": MusicPlayer,
+	series: Series,
 };
 
 // 渲染组件的辅助函数
@@ -45,6 +47,7 @@ function renderComponent(component: any, index: number, components: any[]) {
 			class: componentClass,
 			style: componentStyle,
 			headings: component.type === "toc" ? headings : undefined,
+			series: component.type === "series" ? series : undefined,
 			...component.customProps,
 		},
 	};
@@ -77,8 +80,7 @@ function renderComponent(component: any, index: number, components: any[]) {
 			})}
 		</div>
 	)}
-
-
+</div>
 
 <!-- 响应式样式和JavaScript -->
 <style>

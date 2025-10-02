@@ -31,7 +31,7 @@ interface Props {
 	setOGTypeArticle?: boolean;
 	postSlug?: string;
 	headings?: MarkdownHeading[];
-	series?: string;
+        series?: string;
 }
 
 // 类型守卫函数
@@ -100,7 +100,7 @@ const {
 	setOGTypeArticle,
 	postSlug,
 	headings = [],
-	series,
+        series,
 } = Astro.props;
 const hasBannerCredit =
 	siteConfig.banner.enable && siteConfig.banner.credit.enable;
@@ -1158,4 +1158,3 @@ const transparentClass = shouldEnableTransparency
         max-height: 40px !important;
     }
 }
-</style>

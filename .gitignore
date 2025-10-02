@@ -6,7 +6,6 @@ dist/
 
 # dependencies
 node_modules/
-.pnpm-store/
 
 # logs
 npm-debug.log*
@@ -32,3 +31,4 @@ yarn.lock
 *.iml
 
 cache/
+fuwari/

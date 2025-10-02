@@ -8,8 +8,8 @@ encrypted: true
 password: "52boncest"
 tags: [Demo, Example, Markdown]
 category: 'Examples'
-series: Guide
 draft: false 
+series: "Mizuki"
 ---
 
 ## GitHub Repository Cards
@@ -94,5 +94,3 @@ The content :spoiler[is hidden **ayyy**]!
 
 ```markdown
 The content :spoiler[is hidden **ayyy**]!
-
-```

@@ -7,7 +7,6 @@ enum I18nKey {
 
 	tags = "tags",
 	categories = "categories",
-	series = 'series',
 	recentPosts = "recentPosts",
 	postList = "postList",
 	tableOfContents = "tableOfContents",
@@ -43,6 +42,10 @@ enum I18nKey {
 	friends = "friends",
 	anime = "anime",
 	diary = "diary",
+
+	// 专栏
+	series = "series",
+	seriesOtherPosts = "seriesOtherPosts",
 
 	// 番剧页面
 	animeTitle = "animeTitle",
